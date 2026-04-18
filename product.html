@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Product Details</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<div class="logo">MyShop</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="cart.html">
+🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+
+<a href="about.html">About</a>
+
+</div>
+
+</div>
+
+<!-- Product Detail -->
+
+<section class="product-detail">
+
+<div class="product-detail-box">
+
+<img id="product-image">
+
+<div class="product-info">
+
+<h2 id="product-name"></h2>
+
+<p class="price">
+
+₹ <span id="product-price"></span>
+
+</p>
+
+<p class="description">
+
+Premium quality product designed
+for comfort and performance.
+
+</p>
+
+<button onclick="addToCart()">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="product.js"></script>
+
+</body>
+
+</html>

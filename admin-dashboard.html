@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<div class="logo">
+Admin Dashboard
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="admin.html">Manage Products</a>
+
+<a href="orders.html">View Orders</a>
+<a href="about.html">About</a>
+
+<a href="#" onclick="logout()">Logout</a>
+
+</div>
+
+</div>
+
+<!-- Dashboard -->
+
+<section class="dashboard">
+    <!-- Recent Orders -->
+
+<section class="recent-orders">
+
+<h2>Recent Orders</h2>
+
+<div id="recent-orders-list">
+
+</div>
+
+</section>
+
+<h2>Store Overview</h2>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<h3>Total Products</h3>
+
+<p id="total-products">0</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Orders</h3>
+
+<p id="total-orders">0</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Total Revenue</h3>
+
+<p>₹ <span id="total-revenue">0</span></p>
+
+</div>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="quick-actions">
+
+<button onclick="goProducts()">
+
+Manage Products
+
+</button>
+
+<button onclick="goOrders()">
+
+View Orders
+
+</button>
+
+</div>
+
+</section>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

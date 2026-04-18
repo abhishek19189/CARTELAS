@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Shopify Clone Store</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<!-- <div class="logo">
+Cartella
+</div> -->
+<div class="logo">
+
+<a href="index.html">
+
+<img src="ChatGPT Image Apr 18, 2026, 05_58_04 PM.png">
+<div class="logo-text">
+    CARTELAS
+</div>
+</a>
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="cart.html">
+🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+<a href="login.html">Login</a>
+
+<a href="#product-list">Featured Products</a>
+
+<a href="#sales">Sales</a>
+
+</div>
+
+</div>
+
+<!-- Hero Slider -->
+
+<section class="hero">
+
+<div class="hero-slider">
+
+<div class="slide active"
+style="background-image: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a');">
+</div>
+
+<!-- <div class="slide"
+style="background-image: url('https://images.unsplash.com/photo-1523381294911-8d3cead13475');">
+</div> -->
+
+<!-- <div class="slide"
+style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d');">
+</div> -->
+
+<div class="slide"
+style="background-image: url('https://i.pinimg.com/webp/1200x/08/08/e1/0808e1fb7ee460268f8e885c1af1fbba.webp');">
+</div>
+<div class="slide"
+style="background-image: url('https://i.pinimg.com/1200x/ca/2f/48/ca2f48097be2db9df8c3341c83b44515.jpg');">
+</div>
+
+
+<div class="slide"
+style="background-image: url('https://i.pinimg.com/736x/be/9f/9c/be9f9c139cc0d91e1cb3c1d1493eb3d5.jpg');">
+</div>
+<div class="slide"
+style="background-image: url('https://i.pinimg.com/736x/8f/96/fd/8f96fd32c53b97c4d64edd22f6086d46.jpg');">
+</div>
+<div class="slide"
+style="background-image: url('https://i.pinimg.com/webp/736x/9b/28/29/9b28296a013601a5c1c302b7d7cd2694.webp');">
+</div>
+<div class="slide"
+style="background-image: url('https://i.pinimg.com/1200x/51/c0/97/51c0970709cf35d409e5c89a10a8ccd4.jpg');">
+</div>
+
+</div>
+
+<div class="hero-content">
+
+<h1>Welcome to  CartElas</h1>
+
+<p>
+Shop the best products at the best prices.
+Quality products delivered to your door.
+</p>
+
+<a href="#product-list" class="shop-btn">
+Shop Now
+</a>
+
+</div>
+
+</section>
+<!-- Categories -->
+
+<section class="products">
+
+<h1>Categories</h1>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/1200x/43/c0/fb/43c0fb93eb1c81339c210e4e2424e954.jpg">
+
+<h3>Modern Sofa</h3>
+
+<p class="price">₹18,999</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4">
+
+<h3>Wooden Chair</h3>
+
+<p class="price">₹3,499</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/736x/0d/4d/08/0d4d08435def2a2fb687d4961c626272.jpg">
+
+<h3>DSLR Camera</h3>
+
+<p class="price">₹42,999</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+
+<h3>Smart Watch</h3>
+
+<p class="price">₹6,999</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/1200x/5f/d5/a5/5fd5a5da7bddd2e75e7fb6a48a14e2cb.jpg">
+
+<h3>Casual T-Shirt</h3>
+
+<p class="price">₹799</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/736x/ca/2f/48/ca2f48097be2db9df8c3341c83b44515.jpg">
+
+<h3>Running Shoes</h3>
+
+<p class="price">₹2,499</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Special Sales -->
+
+<!-- Featured Products -->
+
+<section class="products">
+
+<h2>Featured Products</h2>
+
+<div class="product-grid" id="product-list">
+
+</div>
+
+</section>
+
+<!-- Categories -->
+<!-- 
+<section class="products">
+
+<h1>Categories</h1>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/1200x/43/c0/fb/43c0fb93eb1c81339c210e4e2424e954.jpg">
+
+<h3>Modern Sofa</h3>
+
+<p class="price">₹18,999</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4">
+
+<h3>Wooden Chair</h3>
+
+<p class="price">₹3,499</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/736x/0d/4d/08/0d4d08435def2a2fb687d4961c626272.jpg">
+
+<h3>DSLR Camera</h3>
+
+<p class="price">₹42,999</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+
+<h3>Smart Watch</h3>
+
+<p class="price">₹6,999</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/1200x/5f/d5/a5/5fd5a5da7bddd2e75e7fb6a48a14e2cb.jpg">
+
+<h3>Casual T-Shirt</h3>
+
+<p class="price">₹799</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://i.pinimg.com/736x/ca/2f/48/ca2f48097be2db9df8c3341c83b44515.jpg">
+
+<h3>Running Shoes</h3>
+
+<p class="price">₹2,499</p>
+
+<button class="add-btn">Add to Cart</button>
+
+</div>
+
+</div>
+
+</section> -->
+
+<!-- Special Sales -->
+
+<section class="products" id="sales">
+
+<h2>🔥 Special Sales 🎁</h2>
+
+<div class="sale-banner">
+
+<!-- <img src="https://i.pinimg.com/736x/da/e5/d6/dae5d63c88efc781ddcfe8111ab99268.jpg"> -->
+<img src="https://i.pinimg.com/1200x/8f/ce/3e/8fce3e6684d8251a23d2b0c1a055cd49.jpg">
+
+<div class="sale-text">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Highest Selling -->
+
+<section class="products">
+
+<h2>💕 Highest Selling Products 🛒</h2>
+
+<div class="top-banner">
+
+<img src="https://i.pinimg.com/736x/16/2d/ce/162dcef27e055c61f05be8661c317808.jpg">
+
+<div class="top-text">
+
+<h3>Best Selling T-Shirts</h3>
+
+<p>
+Most popular product of this month is our stylish and comfortable T-shirt collection.👚
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+// Check login
+
+let user = localStorage.getItem("loggedUser");
+
+if(!user){
+
+window.location.href = "login.html";
+
+}
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

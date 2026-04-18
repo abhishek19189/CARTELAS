@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Your Cart - Cartellas</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<div class="logo">
+
+<a href="index.html">
+
+<h2>CARTELLAS</h2>
+
+</a>
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="cart.html">
+🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+</div>
+
+</div>
+
+<!-- Cart Section -->
+
+<section class="cart-section">
+
+<h2>Your Shopping Cart</h2>
+
+<div id="cart-items"></div>
+
+<div class="cart-summary">
+
+<h3>
+Total: ₹ <span id="cart-total">0</span>
+</h3>
+
+<button onclick="goToCheckout()">
+Proceed to Checkout
+</button>
+
+</div>
+
+</section>
+
+<!-- Scripts -->
+
+<script src="cart.js"></script>
+
+</body>
+
+</html>
